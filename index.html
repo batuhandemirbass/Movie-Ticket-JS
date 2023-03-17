@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./CSS/main.css">
+  <title>Document</title>
+</head>
+  <body>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-12 col-lg-5 nopadding">
+        <div class="movie-container">
+          <div class="movie-info">
+            <div class="movie-title-container">
+              <div class="movie-box">
+                <div class="movie-title">
+                  <h2>Interstellar</h2>
+                  <h5>Yıldızlararası</h5>
+                  <p>Christopher Nolan</p>
+                </div>
+              </div>
+            </div>
+            <div class="movie-poster-container">
+              <div class="movie-box">
+              <div class="movie-poster"></div>
+              </div>
+            </div>
+            <div class="movie-detail-container">
+              <div class="movie-box">
+                <div class="movie-detail">
+              <ul>
+                <li>
+                  <div class="booking-container"><i class="fa-solid fa-location-dot"></i><span>Paribu Cineverse Zorlu PSM</span></div>
+                </li>
+                <li>
+                  <div class="booking-container"><i class="fa-regular fa-calendar-days"></i><span>14 Mar Salı</span></div>
+                </li>
+                <li>
+                  <div class="booking-container"><i class="fa-solid fa-clock"></i><span>19:40 3D IMAX</span></div>
+                </li>
+                <li>
+                  <div class="booking-container">
+                <button type="submit" class="btn btn-light">Seans Değiştir</button>
+                  </div>
+                </li>
+              </ul>
+            </div>
+              </div>
+            </div>
+          </div>
+          <div class="blur-image"></div>
+        </div>
+      </div>
+      <div class="col-sm-12 col-lg-7 nopadding">
+         <div class="ticket-container">
+           <div class="ticket-header">
+             <div class="ticket-inner">
+               <span>Tickets</span>
+               <div class="ticket-count">
+               <span class="badge text-bg-success">1</span>
+                 <span>Gold Class Student</span>
+               </div>
+               <a href="#" class="btn btn-outline-light">Change Ticket</a>
+             </div>
+             <hr>
+             <div class="container my-red">
+               <div class="screen text-center text-white d-flex justify-content-center align-items-center">Screen</div>
+               <div class="row">
+                 <div class="seat"></div>
+                 <div class="seat"></div>
+                 <div class="seat"></div>
+                 <div class="seat reserved"></div>
+                 <div class="seat reserved"></div>
+                 <div class="seat"></div>
+                 <div class="seat"></div>
+                 <div class="seat"></div>
+               </div>
+               <div class="row">
+                 <div class="seat"></div>
+                 <div class="seat reserved"></div>
+                 <div class="seat reserved"></div>
+                 <div class="seat"></div>
+                 <div class="seat reserved"></div>
+                 <div class="seat"></div>
+                 <div class="seat"></div>
+                 <div class="seat"></div>
+               </div>
+               <div class="row">
+                 <div class="seat"></div>
+                 <div class="seat"></div>
+                 <div class="seat"></div>
+                 <div class="seat"></div>
+                 <div class="seat"></div>
+                 <div class="seat"></div>
+                 <div class="seat"></div>
+                 <div class="seat"></div>
+               </div>
+               <div class="row">
+                 <div class="seat"></div>
+                 <div class="seat"></div>
+                 <div class="seat"></div>
+                 <div class="seat"></div>
+                 <div class="seat"></div>
+                 <div class="seat"></div>
+                 <div class="seat"></div>
+                 <div class="seat"></div>
+               </div>
+               <div class="row info">
+                 <div class="seat"></div>
+                 <div class="seat"></div>
+                 <div class="seat"></div>
+                 <div class="seat"></div>
+                 <div class="seat"></div>
+                 <div class="seat"></div>
+                 <div class="seat"></div>
+                 <div class="seat"></div>
+               </div>
+               <div class="movie-list">
+                 <select name="" id="movie">
+                   <option selected disabled>Choose Room</option>
+                   <option value="20">2D</option>
+                   <option value="22">3D</option>
+                   <option value="25">IMAX</option>
+                 </select>
+               </div>
+               <div class="seat-status">
+                 <ul class="info list-unstyled">
+                   <li>
+                     <div class="seats selected"><p>Selected</p></div>
+                   </li>
+                   <li>
+                     <div class="seats reserved"><p>Reserved</p></div>
+                   </li>
+                   <li>
+                     <div class="seats"><p>Empty</p></div>
+                   </li>
+                 </ul>
+               </div>
+               <p class="text">
+                 The fee calculated for <span id="count"></span> seats is <span id="amount"></span> Dollars
+               </p>
+             </div>
+             </div>
+         </div>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  </body>
+</html>
